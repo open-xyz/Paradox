@@ -19,6 +19,8 @@ module.exports = {
       colors: {
         arcBackground: "#060606",
         arcMenuBg: '#454344',
+        primaryGrey: '#474344',
+        secondaryGrey:'#7c797a',
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
