@@ -1,9 +1,9 @@
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import { Inter, Open_Sans } from 'next/font/google';
 import './globals.css';
 import Header from '@/components/header/Header';
 
-const inter = Inter({ subsets: ['latin'] });
+const inter = Open_Sans({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
 	title: 'Paradox',
@@ -17,7 +17,7 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang='en'>
-			<body className={inter.className}>
+			<body className={`${inter.className} bg-arcBackground text-white`}>
 				<main>
 					<Header />
 					{children}
