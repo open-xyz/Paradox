@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 type HomeProps = {};
@@ -20,9 +21,12 @@ const HomeC: React.FC<HomeProps> = () => {
 					interprete them in layman terms.
 				</p>
 				<div className='flex items-center justify-center w-full my-10'>
-					<button className='flex bg-teal-900 rounded-full px-[4%] py-[2%] text-2xl min-w-fit hover:bg-teal-700 transition-colors ease-in-out duration-300'>
+					<Link
+						href={'/medical-report'}
+						className='flex bg-teal-900 rounded-full px-[4%] py-[2%] text-2xl min-w-fit hover:bg-teal-700 transition-colors ease-in-out duration-300'
+					>
 						Explore Now
-					</button>
+					</Link>
 				</div>
 			</div>
 		</div>
