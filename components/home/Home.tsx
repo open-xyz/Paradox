@@ -23,7 +23,7 @@ const HomeC: React.FC<HomeProps> = () => {
 				<div className='flex items-center justify-center w-full my-10'>
 					<Link
 						href={'/medical-report'}
-						className='flex bg-teal-900 rounded-full px-[4%] py-[2%] text-2xl min-w-fit hover:bg-teal-700 transition-colors ease-in-out duration-300'
+						className='flex bg-blue-900 rounded-full px-[4%] py-[2%] text-2xl min-w-fit hover:bg-blue-700 transition-colors ease-in-out duration-300'
 					>
 						Explore Now
 					</Link>
