@@ -19,7 +19,7 @@ export default function RootLayout({
 	return (
 		<html lang='en'>
 			<body className={`${inter.className} bg-arcBackground text-white`}>
-				<main>
+				<main className='flex flex-col items-center justify-center w-full h-screen'>
 					<Header />
 					{children}
 					<Footer />
