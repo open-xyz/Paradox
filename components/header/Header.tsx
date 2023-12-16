@@ -19,7 +19,7 @@ type HeaderProps = {};
 const Header: React.FC<HeaderProps> = () => {
 	return (
 		<div className='fixed w-full top-[5%] flex justify-center'>
-			<Menubar className='flex items-center justify-center gap-5 hover:text-white text-secondaryGrey border-none rounded-full w-fit px-9 bg-arcMenuBg'>
+			<Menubar className='flex items-center justify-center gap-5 text-secondaryGrey border-none rounded-full w-fit px-9 bg-arcMenuBg'>
 				<MenubarMenu>
 					<MenubarTrigger>File</MenubarTrigger>
 					<MenubarContent>
