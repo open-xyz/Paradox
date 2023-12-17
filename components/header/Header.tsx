@@ -37,7 +37,7 @@ const Header: React.FC<HeaderProps> = () => {
 					Medicine Analyzer
 				</Link>
 
-				<Link
+				{/* <Link
 					className={`${
 						pathname === '/physio' ? '' : 'text-secondaryGrey'
 					} transition-all duration-300 ease-in-out hover:underline hover:text-white hover:scale-105`}
@@ -52,7 +52,7 @@ const Header: React.FC<HeaderProps> = () => {
 					href={'/chat'}
 				>
 					Doctor AI
-				</Link>
+				</Link> */}
 			</Menubar>
 		</div>
 	);
