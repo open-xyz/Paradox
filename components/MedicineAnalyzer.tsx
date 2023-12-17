@@ -7,11 +7,12 @@ import { GoogleGenerativeAI } from "@google/generative-ai";
 
 type MedicineAnalyzerProps = {};
 type ErrorType = string | null;
+type specialType = any;
 
 const MedicineAnalyzer: React.FC<any> = () => {
   const [inputMessage, setInputMessage] = useState("");
   const [isGenerating, setIsGenerating] = useState(false);
-  const [resultJSON, setResultJSON] = useState({});
+  const [resultJSON, setResultJSON] = useState<specialType>({});
   const [error, setError] = useState<ErrorType>(null);
   const genAI = new GoogleGenerativeAI(
     "AIzaSyD7U09b460pOmzMPyJQN5J326ooOqB04ew"

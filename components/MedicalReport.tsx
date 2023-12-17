@@ -47,7 +47,7 @@ const MedicalReport: React.FC<MedicalReportProps> = () => {
       const extractedText = await analyzeImage(base64Image);
       console.log(extractedText);
       setResult(extractedText);
-      const response = await run(extractedText);
+      const response: any = await run(extractedText);
       if (
         response &&
         response.data &&
