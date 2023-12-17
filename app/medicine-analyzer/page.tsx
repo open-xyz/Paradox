@@ -1,8 +1,9 @@
+import MedicineAnalyzer from '@/components/MedicineAnalyzer';
 import React from 'react';
 
 type medicineAnalyzerProps = {};
 
 const medicineAnalyzer: React.FC<medicineAnalyzerProps> = () => {
-	return <div>Have a good coding</div>;
+	return <MedicineAnalyzer />;
 };
 export default medicineAnalyzer;

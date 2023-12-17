@@ -5,16 +5,19 @@ type HomeProps = {};
 
 const HomeC: React.FC<HomeProps> = () => {
 	return (
-		<div className='flex flex-col w-full min-h-screen items-center justify-center px-[20%] snap-mandatory snap-y'>
-			<p className='text-[7rem] flex flex-col text-center font-semibold w-full min-h-screen items-center justify-center'>
+		<div className='flex flex-col w-full  items-center justify-start px-[20%] snap-mandatory snap-y h-full	relative'>
+			<p className='text-[5rem] flex flex-col min-h-screen text-center font-semibold w-full  items-center leading-[10rem] justify-center'>
 				Welcome to the{' '}
-				<span className='text-[7rem] font-bold bg-gradient-to-r from-orange-700 via-blue-500 to-green-400 text-transparent bg-clip-text bg-300% animate-gradient'>
+				<span className='text-[8rem] -m-[2rem] font-bold bg-gradient-to-r from-orange-700 via-blue-500 to-green-400 text-transparent bg-clip-text bg-300% animate-gradient'>
 					Doctalyzer
 				</span>
 			</p>
-			<div className='text-[3rem] flex flex-col text-center font-semibold w-full min-h-screen items-center justify-center'>
+			<div className='text-[3rem] flex flex-col text-center min-h-screen font-semibold w-full  items-center justify-center'>
 				<p>
-					<span className='  bg-gradient-to-r from-orange-700 via-blue-500 to-green-400 text-transparent bg-clip-text bg-300% animate-gradient'>
+					<span
+						className='  bg-gradient-to-r from-orange-700 via-blue-500
+					 to-green-400 text-transparent bg-clip-text bg-300% animate-gradient'
+					>
 						Doctalyzer
 					</span>{' '}
 					- is a tool that helps you to analyze your medical reports and
