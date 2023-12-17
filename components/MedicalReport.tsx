@@ -17,7 +17,7 @@ const MedicalReport: React.FC<MedicalReportProps> = () => {
                 Accepted formats: png, jpg
               </p>
               <label
-                htmlFor="image-upload"
+
                 className="flex flex-col cursor-pointer items-center justify-center h-[20rem] px-10 transition-all rounded-md opacity-100 bg-slate-600/25 bg-blur-2xl hover:bg-slate-700/25"
               >
                 <svg
