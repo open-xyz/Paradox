@@ -47,6 +47,24 @@ const MedicalReport: React.FC<MedicalReportProps> = () => {
 									name='image-upload'
 									type='file'
 									accept='image/*'
+									onChange={(e) => {
+										if (e.currentTarget.files) {
+											const file = e.currentTarget.files[0];
+											const maxSize = 1024 * 1024; // maximum file size in bytes (1MB in this example)
+											if (file.size > maxSize) {
+												alert('File is too large');
+											}
+											const reader = new FileReader();
+											reader.readAsDataURL(file);
+											// reader.onloadend = () => {
+											// 	const base64data = reader.result;
+											// 	setFieldValue('file', base64data);
+											// 	setFieldValue('fileName', file.name);
+											// 	setFieldValue('fileType', file.type);
+											// };
+										}
+									}}
+									required
 									className='hidden'
 								/>
 							</div>
