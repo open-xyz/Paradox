@@ -101,9 +101,9 @@ const MedicalReport: React.FC<MedicalReportProps> = () => {
   };
 
   return (
-    <div className='flex flex-col items-center justify-start h-full w-full mt-[30vh] text-white gap-5'>
+    <div className='flex flex-col items-center justify-start h-[100vh] w-full mt-[30vh] text-white gap-5'>
       {!interpreted && (
-        <div className='z-[5] h-full w-[30rem] px-[3rem] py-[2rem] bg-slate-500/10 rounded-xl'>
+        <div className='z-[5] h-1/2 w-[30rem] px-[3rem] py-[2rem] bg-slate-500/10 rounded-xl'>
           <div className='flex flex-col items-center w-full justify-start rounded-md h-[20rem] relative'>
             <form className='w-full'>
               <p className='text-[1.5rem]'>Upload a file</p>
